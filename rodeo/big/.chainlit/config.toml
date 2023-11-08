@@ -1,6 +1,6 @@
 [project]
 # Whether to enable telemetry (default: true). No personal data is collected.
-enable_telemetry = true
+enable_telemetry = false
 
 # List of environment variables to be provided by each user to use the app.
 user_env = []
@@ -29,13 +29,13 @@ multi_modal = true
 
 [UI]
 # Name of the app and chatbot.
-name = "Chatbot"
+name = "B.I.G"
 
 # Show the readme while the conversation is empty.
-show_readme_as_default = true
+show_readme_as_default = false
 
 # Description of the app and chatbot. This is used for HTML tags.
-# description = ""
+# description = "B.I.G - Bulk Information Gleaner"
 
 # Large size content are by default collapsed for a cleaner ui
 default_collapse_content = true
@@ -47,7 +47,7 @@ default_expand_messages = false
 hide_cot = false
 
 # Link to your github repo. This will add a github button in the UI's header.
-# github = ""
+# github = "https://github.com/theodo-group/Rodeo"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
