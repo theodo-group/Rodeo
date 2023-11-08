@@ -8,6 +8,12 @@
 
 It allows you to ask questions to huge documents and get answers in seconds.
 
+
+https://github.com/theodo-group/Rodeo/assets/19614572/e643f447-c343-49de-a8e8-d91a1b227e50
+
+
+
+
 ## How does it work?
 
 It uses the power of GenAI to extract the most relevant information from a document and answer your questions.
