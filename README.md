@@ -12,3 +12,16 @@ Rodeo is a collection of productivity boosters app powered by GenAI.
 ## Projects
 
 - [Bulk Information Gleaner](./rodeo/big/README.md): Ask questions to huge documents and get answers in seconds.
+
+
+## Add a new project
+
+- Simply add a new folder with your project name under `rodeo` folder.
+- Add a `README.md` file with the project description.
+- Explain how to run the project in the `README.md` file.
+- Dockerize your project if needed.
+- Contact @StanGirard for any questions.
+
+## Have fun 🔥 
+
+Have fun with Rodeo and don't hesitate to contribute to the project.
