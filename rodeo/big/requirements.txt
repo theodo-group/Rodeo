@@ -3,3 +3,4 @@ tiktoken==0.5.1
 chainlit==0.7.400
 unstructured[all-docs]
 unstructured[docx]
+openai==1.1.0
