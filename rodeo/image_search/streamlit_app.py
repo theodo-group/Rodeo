@@ -1,5 +1,6 @@
 import streamlit as st
 from dotenv import load_dotenv
+from image_search.views.homepage import home_page
 from image_search.views.search_page import search_page
 from image_search.views.upload_page import upload_page
 
@@ -14,6 +15,7 @@ st.title("Image Search Engine 🤖")
 page = st.sidebar.selectbox(
     "Select a Page",
     [
+        "Home Page",
         "Search Images",
         "Upload Images",
     ],
@@ -22,5 +24,7 @@ page = st.sidebar.selectbox(
 
 if page == "Upload Images":
     upload_page()
-else:
+elif page == "Search Images":
     search_page()
+else:
+    home_page()
