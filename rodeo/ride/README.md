@@ -4,7 +4,11 @@
 
 It allows youn to evaluate the quality of a use case.
 
-https://github.com/theodo-group/Rodeo/assets/19614572/ce87cdb6-137c-422f-83da-b3f082fad01c
+
+
+https://github.com/theodo-group/Rodeo/assets/19614572/1e6df2c5-cf86-4804-987b-09421dbba358
+
+
 
 
 ## How does it work?
