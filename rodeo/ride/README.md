@@ -5,9 +5,7 @@
 It allows youn to evaluate the quality of a use case.
 
 
-
-https://github.com/theodo-group/Rodeo/assets/19614572/1e6df2c5-cf86-4804-987b-09421dbba358
-
+https://github.com/theodo-group/Rodeo/assets/19614572/ca435213-e51a-4da3-92f7-bf4920dcb8a7
 
 
 
