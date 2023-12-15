@@ -6,7 +6,7 @@ from google.cloud import aiplatform
 from google.protobuf import struct_pb2
 
 
-class VertexEmbeddingClient:
+class VertexAIService:
     def __init__(
         self,
         location: str = "us-central1",
@@ -14,7 +14,7 @@ class VertexEmbeddingClient:
     ):
         client_options = {"api_endpoint": api_regional_endpoint}
         self.client = aiplatform.gapic.PredictionServiceClient(
-            client_options=client_options
+            client_options=client_options,
         )
         self.location = location
         self.project = os.getenv("PROJECT_ID")
@@ -46,7 +46,18 @@ class VertexEmbeddingClient:
 
         return embedding
 
+    def generate_image(self, textual_prompt: str) -> bytes:
+        image_gen_endpoint = f"https://us-central1-aiplatform.googleapis.com/v1/projects/{self.project}/locations/{self.location}/publishers/google/models/imagegeneration:predict"
 
-def generate_embedding(text_or_image: typing.Union[str, bytes]) -> list[float]:
-    client = VertexEmbeddingClient()
-    return client.get_embedding(text_or_image)
+        instance = {"prompt": textual_prompt}
+        parameters = {"sampleCount": 1}
+
+        response = self.client.predict(
+            endpoint=image_gen_endpoint,
+            instances=[instance],
+            parameters=parameters,
+        )
+
+        generated_image = response.predictions[0]["output"]
+
+        return generated_image

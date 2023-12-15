@@ -1,5 +1,5 @@
 import streamlit as st
-from image_search.components.image_uploader import render_image_uploader
+from components.image_uploader import render_image_uploader
 
 
 def upload_page():

@@ -1,8 +1,8 @@
 import streamlit as st
 from dotenv import load_dotenv
-from image_search.views.homepage import home_page
-from image_search.views.search_page import search_page
-from image_search.views.upload_page import upload_page
+from views.homepage import home_page
+from views.search_page import search_page
+from views.upload_page import upload_page
 
 load_dotenv()
 

@@ -13,6 +13,7 @@ Rodeo is a collection of productivity boosters app powered by GenAI.
 
 - [BIG - Bulk Information Gleaner](./rodeo/big/README.md): Ask questions to huge documents and get answers in seconds.
 - [RIDE - Rodeo Intelligent Decision Evaluator](./rodeo/ride/README.md): Evaluate the quality of a use case.
+- [RIF - Rodeo Image Finder](./rodeo/rif/README.md): Find similar images in a huge dataset through a simple text query.
 
 
 ## Add a new project

@@ -1,5 +1,5 @@
-from image_search.utils.generate_embedding import generate_embedding
-from image_search.utils.get_supabase_client import get_supabase_client
+from utils.generate_embedding import generate_embedding
+from utils.get_supabase_client import get_supabase_client
 
 
 def get_nearest_images(text_query: str, k: int = 4) -> list[dict]:
