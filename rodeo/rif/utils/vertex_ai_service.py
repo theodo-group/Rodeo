@@ -46,3 +46,18 @@ class VertexAIService:
 
         return embedding
 
+    def generate_image(self, textual_prompt: str) -> bytes:
+        image_gen_endpoint = f"https://us-central1-aiplatform.googleapis.com/v1/projects/{self.project}/locations/{self.location}/publishers/google/models/imagegeneration:predict"
+
+        instance = {"prompt": textual_prompt}
+        parameters = {"sampleCount": 1}
+
+        response = self.client.predict(
+            endpoint=image_gen_endpoint,
+            instances=[instance],
+            parameters=parameters,
+        )
+
+        generated_image = response.predictions[0]["output"]
+
+        return generated_image
