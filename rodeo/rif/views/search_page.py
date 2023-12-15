@@ -1,6 +1,6 @@
 import streamlit as st
-from image_search.components.image_displayer import display_image
-from image_search.utils.get_nearest_images import get_nearest_images
+from components.image_displayer import display_image
+from utils.get_nearest_images import get_nearest_images
 
 
 def search_page():

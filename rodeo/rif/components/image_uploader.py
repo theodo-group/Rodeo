@@ -1,7 +1,7 @@
 import streamlit as st
-from image_search.utils.convert_image_to_base64 import convert_image_to_base64
-from image_search.utils.generate_embedding import generate_embedding
-from image_search.utils.save_doc_and_embed import save_doc_and_embed
+from utils.convert_image_to_base64 import convert_image_to_base64
+from utils.generate_embedding import generate_embedding
+from utils.save_doc_and_embed import save_doc_and_embed
 
 
 def render_image_uploader():
