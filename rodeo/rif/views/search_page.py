@@ -13,7 +13,7 @@ def search_page():
     text_query = st.text_input("Which image are you looking for ?")
 
     similarity_threshold = st.slider(
-        "Similarity threshold", min_value=0.0, max_value=1.0, value=0.5
+        "Similarity threshold", min_value=0.0, max_value=1.0, value=0.1
     )
 
     def generate_image_from_text():
